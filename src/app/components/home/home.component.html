@@ -1,8 +1,10 @@
-<app-landing></app-landing>
-
-
+<app-landing
+(onDownArrowClick)="scrollToElement(target)"
+>
+</app-landing>
 <div class="experience-background">
     <div class="experience-wrapper">
+        <div #target></div>
         <app-experience
             iframeURL="https://www.youtube.com/embed/JVP9BW5NX70"
             title="Multiplayer Game of Chess"

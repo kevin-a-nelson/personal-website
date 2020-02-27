@@ -4,6 +4,8 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
+import { EventEmitter, Output } from '@angular/core';
+
 
 
 @Component({
@@ -21,10 +23,13 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 })
 export class LandingComponent implements OnInit {
   faArrowDown = faArrowDown;
+  @Output() onDownArrowClick: EventEmitter<any> = new EventEmitter();
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
+  onClick(): void {
+    this.onDownArrowClick.emit(null);
+  }
 }
