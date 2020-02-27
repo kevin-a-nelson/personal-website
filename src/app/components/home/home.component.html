@@ -2,27 +2,19 @@
 (onDownArrowClick)="scrollToElement(target)"
 >
 </app-landing>
+
 <div class="experience-background">
-    <div class="experience-wrapper">
-        <div #target></div>
+    <div #target></div>
+    <div class="experience-wrapper"
+    *ngFor="let experience of experiences; let i = index">
         <app-experience
-            iframeURL="https://www.youtube.com/embed/JVP9BW5NX70"
-            title="Multiplayer Game of Chess"
-            subtitle="Personal Project"
-            class="purple"
-        ></app-experience>
-        <app-experience
-            iframeURL="https://www.youtube.com/embed/dpiWVDZi9RY?start=57"
-            title="Point of Sale"
-            subtitle="Internship project at PrepNetwork"
-            class="blue"
-        ></app-experience>
-        <app-experience
-            iframeURL="https://www.youtube.com/embed/4jkqgRg3Rr0?start=2674"
-            title="Rate my Professor Course Planner"
-            subtitle="Capstone Project at Actualize Coding Bootcamp"
-            class="pink"
-        ></app-experience>
+            [iframeURL]="experience['iframeURL']"
+            [title]="experience['title']"
+            [subtitle]="experience['subtitle']"
+            [class]="experience['class']"
+            [description]="experience['description']"
+        >
+        </app-experience>
     </div>
 </div>
 

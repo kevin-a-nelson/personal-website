@@ -7,21 +7,15 @@ import { trigger, style, animate, transition } from '@angular/animations';
   selector: 'app-experience',
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.scss'],
-  animations: [
-    trigger('fade', [
-      transition('void => *', [
-        style({ opacity: 0 }),
-        animate(2000, style({ opacity: 1 }))
-      ])
-    ])
-  ]
 })
+
 export class ExperienceComponent implements OnInit {
 
   @Input() iframeURL: string;
   @Input() title: string;
   @Input() subtitle: string;
   @Input() class: string;
+  @Input() description: string;
 
   secureIFrameURL;
 

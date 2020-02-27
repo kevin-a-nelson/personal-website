@@ -1,0 +1,18 @@
+{
+  "targets": {
+    "random-projec": {
+      "hosting": {
+        "personal-website": [
+          "random-projec"
+        ]
+      }
+    },
+    "personal-website-4835c": {
+      "hosting": {
+        "personal-website": [
+          "personal-website-4835c"
+        ]
+      }
+    }
+  }
+}
