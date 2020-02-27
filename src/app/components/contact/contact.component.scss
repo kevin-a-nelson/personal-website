@@ -1,0 +1,26 @@
+.contact-container {
+    height: 100vh;
+    background: rgb(76, 175, 80)
+}
+
+.contact {
+    padding-top: 30vh;
+    text-align: center;
+}
+
+.contact-header {
+    font-size: 40px;
+    color: white;
+}
+
+.contact-icon {
+    color: white;
+}
+
+.contact-logo-container {
+    padding-top: 50px;
+    width: 500px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+}

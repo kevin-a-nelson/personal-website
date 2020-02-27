@@ -1,0 +1,22 @@
+.landing {
+    height: 100vh;
+    // background: #659DBD;
+    text-align: center;
+    // border-bottom: 1 px solid rgba(0, 0, 0, .5);
+    /* for Safari */
+    -webkit-background-clip: padding-box;
+    /* for IE9+, Firefox 4+, Opera, Chrome */
+    background-clip: padding-box;
+}
+
+.landing-msg {
+
+    h1 {
+        font-size: 50px;
+        line-height: 65px;
+        font-family: Source Sans Pro;
+    }
+
+    font-size: 100px;
+    padding-top: 20vh;
+}
