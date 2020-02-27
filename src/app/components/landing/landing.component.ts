@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { trigger, style, animate, transition } from '@angular/animations';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -19,8 +20,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
   ]
 })
 export class LandingComponent implements OnInit {
-  faCoffee = faCoffee;
-  faLinkedin = faLinkedin;
+  faArrowDown = faArrowDown;
 
   constructor() { }
 

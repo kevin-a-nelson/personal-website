@@ -9,6 +9,12 @@
     background-clip: padding-box;
 }
 
+.landing-btn {
+    margin-top: 100px;
+    height: 75px;
+    width: 75px;
+}
+
 .landing-msg {
 
     h1 {
@@ -19,4 +25,13 @@
 
     font-size: 100px;
     padding-top: 20vh;
+}
+
+.landing-btn {
+    text-align: center;
+}
+
+.arrow-down-icon {
+    // background: blue;
+    line-height: 60px;
 }
