@@ -3,6 +3,7 @@ import { DomSanitizer } from '@angular/platform-browser'
 import { trigger, style, animate, transition } from '@angular/animations';
 
 
+
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
@@ -16,6 +17,8 @@ export class ExperienceComponent implements OnInit {
   @Input() subtitle: string;
   @Input() class: string;
   @Input() description: string;
+  @Input() site: string;
+  @Input() github: string;
 
   secureIFrameURL;
 
@@ -24,5 +27,9 @@ export class ExperienceComponent implements OnInit {
   ngOnInit(): void {
     this.secureIFrameURL = this.sanitizer.bypassSecurityTrustResourceUrl(this.iframeURL)
     this.class += ' experience-container'
+  }
+
+  goToLink(url) {
+    window.open(url, "_blank");
   }
 }
