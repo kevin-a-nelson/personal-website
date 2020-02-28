@@ -9,18 +9,43 @@
 }
 
 .contact-header {
+    line-height: 50px;
     font-size: 40px;
     color: white;
 }
 
 .contact-icon {
+    font-size: 70px;
     color: white;
 }
 
 .contact-logo-container {
-    padding-top: 50px;
+    padding-top: 30px;
     width: 500px;
     margin: 0px auto;
     display: flex;
     justify-content: space-around;
+}
+
+
+/* At the top level of your code */
+@media screen and (max-width: 500px) {
+    .contact-logo-container {
+        width: 400px;
+    }
+
+    .contact-icon {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .contact-logo-container {
+        width: 300px;
+    }
+
+    .contact-icon {
+        font-size: 40px;
+    }
 }
