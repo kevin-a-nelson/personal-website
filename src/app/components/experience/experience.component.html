@@ -21,8 +21,8 @@
           </p>
         </mat-card-content>
         <mat-card-actions>
-          <button mat-button>Go to Site</button>
-          <button mat-button>Github</button>
+          <a *ngIf="site" mat-button href="{{ site }}" target="_blank">Go to Site</a>
+          <a *ngIf="github" mat-button href="{{ github }}" target="_blank">Github</a>
         </mat-card-actions>
       </mat-card>
   </div>

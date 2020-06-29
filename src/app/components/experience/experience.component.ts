@@ -16,6 +16,8 @@ export class ExperienceComponent implements OnInit {
   @Input() subtitle: string;
   @Input() class: string;
   @Input() description: string;
+  @Input() site: string;
+  @Input() github: string;
 
   secureIFrameURL;
 
