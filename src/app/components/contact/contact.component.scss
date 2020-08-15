@@ -29,15 +29,19 @@
     .contact-logo-container {
         font-size: 3vw;
         width: 100%;
+        padding-top: 10vw;
     }
-}
 
-@media only screen and (max-width: 336px) {
     .contact-header {
-        line-height: 50px;
-    }
-
-    .contact-logo-container {
-        padding-top: 25px;
+        width: 100%;
+        font-size: 10vw;
+        // line-height: 50px;
     }
 }
+
+// @media only screen and (max-width: 336px) {
+
+//     .contact-logo-container {
+//         padding-top: 25px;
+//     }
+// }
