@@ -1,29 +1,30 @@
 <div [ngClass]="class">
   <div class="experience">
     <mat-card>
-        <mat-card-header class="experience-header">
-            <mat-card-title>{{ title }}</mat-card-title>
-            <mat-card-subtitle>{{ subtitle }}</mat-card-subtitle>
-        </mat-card-header>
-        <div class="experience-video">
-            <iframe
-                width="100%"
-                height="100%"
-                [src]="secureIFrameURL" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
-        </div>
-        <mat-card-content class="experience-content">
-          <p>
-            {{ description }}
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <a *ngIf="site" mat-button href="{{ site }}" target="_blank">Go to Site</a>
-          <a *ngIf="github" mat-button href="{{ github }}" target="_blank">Github</a>
-        </mat-card-actions>
-      </mat-card>
+      <mat-card-header class="experience-header">
+        <mat-card-title>{{ title }}</mat-card-title>
+        <mat-card-subtitle>{{ subtitle }}</mat-card-subtitle>
+      </mat-card-header>
+      <div class="experience-video">
+        <iframe
+          width="100%"
+          height="100%"
+          [src]="secureIFrameURL"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope;
+          picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <mat-card-content class="experience-content">
+        <p>
+          {{ description }}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a *ngIf="site" mat-button href="{{ site }}" target="_blank">Go to Site</a>
+        <a *ngIf="github" mat-button href="{{ github }}" target="_blank">Github</a>
+      </mat-card-actions>
+    </mat-card>
   </div>
 </div>
