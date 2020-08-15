@@ -24,3 +24,20 @@
     display: flex;
     justify-content: space-around;
 }
+
+@media only screen and (max-width: 510px) {
+    .contact-logo-container {
+        font-size: 3vw;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 336px) {
+    .contact-header {
+        line-height: 50px;
+    }
+
+    .contact-logo-container {
+        padding-top: 25px;
+    }
+}
